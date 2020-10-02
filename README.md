@@ -22,7 +22,8 @@
   - [Apache NetBeans](https://netbeans.apache.org/)
   - Versão: 12.1
 ## 😎 Autor
-- Jurema Gonçalves e Beans
+- Jurema Gonçalves 
+- Beans
 
 
 #### Dê uma estrela se o projecto agregou algum valor para você. 🎈💜
