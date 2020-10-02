@@ -1,0 +1,232 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1/out/2020, 16:47:17
+    Author     : LENOVO
+*/
+:root{
+    --primary-color: #7519EB;
+    --secondary-color: #933FFF;
+    --tertiary-color: #A259FF;
+    --quartiary-color: #601DB5;
+
+    --success-color: #04D400;
+    --success-color-hover: #05E300;
+    --warning-color: #FF9900;
+    --warning-color-hover: #F19101;
+    --danger-color: #FF003D;
+    --danger-color-hover: #E40037;
+
+    --text-color: #fff;
+    --btn-submit: #6E23CE;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+}
+a, a:active,a:link,a:visited{
+    text-decoration:none;
+}
+
+.container{
+    padding: 4rem;
+    margin: auto;
+}
+
+h1.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.btn-add-contact, .search-box .btn-submit{
+    background-color:var(--success-color);
+    padding: .7rem;
+    align-self: flex-start;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    border: none;
+    color: white;
+}
+
+.btn-add-contact:hover, .search-box .btn-submit:hover{
+    background-color: var(--success-color-hover);
+}
+
+.search-box .btn-submit{
+    margin-left: .5rem;
+}
+
+.container-1{
+    display:flex;
+    align-items: center;
+}
+
+.search-box input[type="text"], select{
+    padding: .7rem;
+    background-color: var(--tertiary-color);
+    border-radius: .5rem;
+    border: .2rem solid var(--quartiary-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.search-box select option{
+    border-radius: 2rem;
+    font-weight: 500;
+}
+
+
+.search-box input[type="text"]::-webkit-input-placeholder{
+    color: var(--quartiary-color);
+}
+
+
+table
+{
+    margin-top: 3rem;
+    border-collapse: collapse;
+    width: 80rem;
+    background-color: var(--tertiary-color);
+    border-radius: .8rem;
+}
+th, td{
+    padding: .8rem;
+    text-align: left;
+    border: 1px solid var(--quartiary-color);
+}
+thead{
+    background-color: var(--secondary-color);
+}
+th{   
+    font-size: 1.5rem;
+    color: white;
+    font-weight:500;
+}
+td{
+    cursor: pointer;
+    transition: .2s linear; 
+    color: white;
+    font-size:1.3rem;
+}
+/* td:hover{ 
+    background-color: var(--secondary-color);
+} */
+tr td:last-child, tr th{
+    text-align:center;
+}
+
+
+td .btn-edit, 
+td .btn-remove{
+    padding: .5rem;
+    border-radius: .4rem;
+    transition: all .3s;
+}
+
+.btn-edit{
+    background-color: var(--warning-color);
+}
+.btn-remove{
+    background-color: var(--danger-color);
+}
+
+td .btn-edit:hover{
+    background-color: var(--warning-color-hover);
+}
+td .btn-remove:hover{
+    background-color: var(--danger-color-hover);
+}
+
+@media only screen and (max-width: 900px){
+    table{
+        width: 100%;
+    }
+}
+/********************************
+    Form
+********************************/
+.box-form{
+    background-color: var(--tertiary-color);
+    margin: auto;
+    width: 45rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    
+}
+
+.box-form-top{
+    background-color: var(--quartiary-color);
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+}
+
+.box-form-top h1{
+    font-size: 2.5rem;
+}
+
+.box-form form{
+    width: 35rem;
+    margin: 3rem auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+.form-group input[type="text"]{
+    width: 100%;
+    padding: .6rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--quartiary-color);
+    background-color: inherit;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.form-group input[type="text"]::-webkit-input-placeholder{
+    color: var(--quartiary-color);
+}
+
+.box-form form .btn-submit{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--quartiary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    margin: 1.5rem 0 3rem;
+}
+
+.box-form form .btn-submit:hover{
+    background-color: var(--btn-submit);
+}
